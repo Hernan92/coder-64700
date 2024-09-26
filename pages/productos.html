@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder-comision-64700</title>
+
+    <!-- Link-Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Link Boostrap Icons -->     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Link - Css -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header__content bg bg-light" id="header">
+        <section class="heading container-fluid bg bg-dark">
+            <article class="row row-gap-2 p-1">
+                <div class="col-sm-6 d-flex align-items-center justify-content-center">
+                    <span class="heading__text text-light">Seguinos en:</span>
+                </div>
+                <div class="col-sm-6 d-flex align-items-center justify-content-around">
+                    <a href="https://www.facebook.com/" class="link-redes btn btn-dark"><i class="bi bi-facebook"></i></a>
+                    <a href="https://x.com/?lang=es" class="link-redes btn btn-dark"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://www.instagram.com/" class="link-redes btn btn-dark"><i class="bi bi-instagram"></i></a>
+                    <a href="https://github.com/" class="link-redes btn btn-dark"><i class="bi bi-github"></i></a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-light bg bg-light">
+            <div class="container-fluid">
+                <img src="../logos/logo__principal.png" alt="logo" class="logo">
+                <button class="navbar-toggler fs-2" type="button" data-bs-target="#menu" data-bs-toggle="offcanvas">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <section class="offcanvas offcanvas-start" id="menu">
+                    <article class="offcanvas-header">
+                        <img src="../logos/logo__principal.png" alt="logo" class="logo">
+                        <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+                    </article>
+
+                    <article class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="../index.html" class="nav-link fs-5 border-bottom">Inicio</a></li>
+                            <li class="nav-item"><a href="../pages/nosotros.html" class="nav-link fs-5 border-bottom">Nosotros</a></li>
+                            <li class="nav-item"><a href="./productos.html" class="nav-link fs-5 active border-bottom">Productos</a></li>
+                            <li class="nav-item"><a href="./servicios.html" class="nav-link fs-5 border-bottom">Servicios</a></li>
+                            <li class="nav-item"><a href="./contacto.html" class="nav-link fs-5 border-bottom">Contacto</a></li>
+                        </ul>
+                    </article>
+                </section>
+            </div>
+        </nav>
+
+        <!-- Barra de busqueda -->
+        <section class="input-group flex-nowrap p-2">
+            <button class="btn btn-secondary" id="search-bar"><i class="bi bi-search"></i></button>
+            <input type="text" class="form-control" placeholder="Buscar" aria-label="Search" aria-describedby="search-bar">
+        </section>
+    </header>
+
+    <!-- Main Productos -->
+    <main class="main__productos" id="productos">
+        <section class="dropdown p-3">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-funnel"></i> Filtrar por marca
+            </button>
+            <ul class="dropdown-menu w-25">
+              <li><a class="dropdown-item" href="./amazfit.html">Amazfit</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./gadnic.html">Gadnic</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./galaxy-watch.html">Galaxy-Watch</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./garmin.html">Garmin</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./xiaomi-watch.html">Xiaomi-Watch</a></li>
+            </ul>
+        </section>
+
+        <section class="productos p-3">
+            <article class="card text-center py-2" style="width: 18rem;">
+                <img src="../imagenes_productos/img1.jpg" class="card-img-top w-50 m-auto" alt="card__img">
+                <div class="card-body">
+                  <h5 class="card-title">Amazfit - #01</h5>
+                  <p class="card-text">Compra online 30% off</p>
+                  <p class="card-precio fs-4">$10.000</p>
+                  <button class="btn btn-primary w-100"><i class="bi bi-cart4"></i> Agregar Producto</button>
+                </div>
+            </article>
+
+            <article class="card text-center py-2" style="width: 18rem;">
+                <img src="../imagenes_productos/img2.jpg" class="card-img-top w-50 m-auto" alt="card__img">
+                <div class="card-body">
+                  <h5 class="card-title">Amazfit - #02</h5>
+                  <p class="card-text">Compra online 30% off</p>
+                  <p class="card-precio fs-4">$10.000</p>
+                  <button class="btn btn-primary w-100"><i class="bi bi-cart4"></i> Agregar Producto</button>
+                </div>
+            </article>
+
+            <article class="card text-center py-2" style="width: 18rem;">
+                <img src="../imagenes_productos/img3.jpg" class="card-img-top w-50 m-auto" alt="card__img">
+                <div class="card-body">
+                  <h5 class="card-title">Amazfit - #03</h5>
+                  <p class="card-text">Compra online 30% off</p>
+                  <p class="card-precio fs-4">$10.000</p>
+                  <button class="btn btn-primary w-100"><i class="bi bi-cart4"></i> Agregar Producto</button>
+                </div>
+            </article>
+
+            <article class="card text-center py-2" style="width: 18rem;">
+                <img src="../imagenes_productos/img4.jpg" class="card-img-top w-50 m-auto" alt="card__img">
+                <div class="card-body">
+                  <h5 class="card-title">Gadnic - #01</h5>
+                  <p class="card-text">Compra online 30% off</p>
+                  <p class="card-precio fs-4">$10.000</p>
+                  <button class="btn btn-primary w-100"><i class="bi bi-cart4"></i> Agregar Producto</button>
+                </div>
+            </article>
+
+            <article class="card text-center py-2" style="width: 18rem;">
+                <img src="../imagenes_productos/img5.jpg" class="card-img-top w-50 m-auto" alt="card__img">
+                <div class="card-body">
+                  <h5 class="card-title">Gadnic - #02</h5>
+                  <p class="card-text">Compra online 30% off</p>
+                  <p class="card-precio fs-4">$10.000</p>
+                  <button class="btn btn-primary w-100"><i class="bi bi-cart4"></i> Agregar Producto</button>
+                </div>
+            </article>
+
+            <article class="card text-center py-2" style="width: 18rem;">
+                <img src="../imagenes_productos/img6.jpg" class="card-img-top w-50 m-auto" alt="card__img">
+                <div class="card-body">
+                  <h5 class="card-title">Gadnic - #03</h5>
+                  <p class="card-text">Compra online 30% off</p>
+                  <p class="card-precio fs-4">$10.000</p>
+                  <button class="btn btn-primary w-100"><i class="bi bi-cart4"></i> Agregar Producto</button>
+                </div>
+            </article>
+
+            <article class="card text-center py-2" style="width: 18rem;">
+                <img src="../imagenes_productos/img7.jpg" class="card-img-top w-50 m-auto" alt="card__img">
+                <div class="card-body">
+                  <h5 class="card-title">Galaxy-Watch - #01</h5>
+                  <p class="card-text">Compra online 30% off</p>
+                  <p class="card-precio fs-4">$10.000</p>
+                  <button class="btn btn-primary w-100"><i class="bi bi-cart4"></i> Agregar Producto</button>
+                </div>
+            </article>
+
+            <article class="card text-center py-2" style="width: 18rem;">
+                <img src="../imagenes_productos/img8.jpg" class="card-img-top w-50 m-auto" alt="card__img">
+                <div class="card-body">
+                  <h5 class="card-title">Galaxy-Watch - #02</h5>
+                  <p class="card-text">Compra online 30% off</p>
+                  <p class="card-precio fs-4">$10.000</p>
+                  <button class="btn btn-primary w-100"><i class="bi bi-cart4"></i> Agregar Producto</button>
+                </div>
+            </article>
+        </section>
+
+        <!-- Seccion Mostrar Mas -->
+        <section class="section__mostrarMas d-flex justify-content-center p-3">
+            <button class="btn btn-outline-secondary d-flex align-items-center gap-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Ver mas <i class="bi bi-chevron-down"></i>
+            </button>
+        </section>
+        <section class="sub__productos collapse p-3" id="collapseExample">
+            <article class="card text-center py-2" style="width: 18rem;">
+                <img src="../imagenes_productos/img9.jpg" class="card-img-top w-50 m-auto" alt="card__img">
+                <div class="card-body">
+                    <h5 class="card-title">Galaxy-Watch - #03</h5>
+                    <p class="card-text">Compra online 30% off</p>
+                    <p class="card-precio fs-4">$10.000</p>
+                    <button class="btn btn-primary w-100"><i class="bi bi-cart4"></i> Agregar Producto</button>
+                </div>
+            </article>
+
+            <article class="card text-center py-2" style="width: 18rem;">
+                <img src="../imagenes_productos/img10.jpg" class="card-img-top w-50 m-auto" alt="card__img">
+                <div class="card-body">
+                    <h5 class="card-title">Galaxy-Watch - #04</h5>
+                    <p class="card-text">Compra online 30% off</p>
+                    <p class="card-precio fs-4">$10.000</p>
+                    <button class="btn btn-primary w-100"><i class="bi bi-cart4"></i> Agregar Producto</button>
+                </div>
+            </article>
+
+            <article class="card text-center py-2" style="width: 18rem;">
+                <img src="../imagenes_productos/img11.jpg" class="card-img-top w-50 m-auto" alt="card__img">
+                <div class="card-body">
+                    <h5 class="card-title">Garmin - #01</h5>
+                    <p class="card-text">Compra online 30% off</p>
+                    <p class="card-precio fs-4">$10.000</p>
+                    <button class="btn btn-primary w-100"><i class="bi bi-cart4"></i> Agregar Producto</button>
+                </div>
+            </article>
+
+            <article class="card text-center py-2" style="width: 18rem;">
+                <img src="../imagenes_productos/img12.jpg" class="card-img-top w-50 m-auto" alt="card__img">
+                <div class="card-body">
+                    <h5 class="card-title">Garmin - #02</h5>
+                    <p class="card-text">Compra online 30% off</p>
+                    <p class="card-precio fs-4">$10.000</p>
+                    <button class="btn btn-primary w-100"><i class="bi bi-cart4"></i> Agregar Producto</button>
+                </div>
+            </article>
+
+            <article class="card text-center py-2" style="width: 18rem;">
+                <img src="../imagenes_productos/img13.jpg" class="card-img-top w-50 m-auto" alt="card__img">
+                <div class="card-body">
+                    <h5 class="card-title">Garmin - #03</h5>
+                    <p class="card-text">Compra online 30% off</p>
+                    <p class="card-precio fs-4">$10.000</p>
+                    <button class="btn btn-primary w-100"><i class="bi bi-cart4"></i> Agregar Producto</button>
+                </div>
+            </article>
+
+            <article class="card text-center py-2" style="width: 18rem;">
+                <img src="../imagenes_productos/img14.jpg" class="card-img-top w-50 m-auto" alt="card__img">
+                <div class="card-body">
+                    <h5 class="card-title">Xiaomi-Watch - #01</h5>
+                    <p class="card-text">Compra online 30% off</p>
+                    <p class="card-precio fs-4">$10.000</p>
+                    <button class="btn btn-primary w-100"><i class="bi bi-cart4"></i> Agregar Producto</button>
+                </div>
+            </article>
+
+            <article class="card text-center py-2" style="width: 18rem;">
+                <img src="../imagenes_productos/img15.jpg" class="card-img-top w-50 m-auto" alt="card__img">
+                <div class="card-body">
+                    <h5 class="card-title">Xiaomi-Watch - #02</h5>
+                    <p class="card-text">Compra online 30% off</p>
+                    <p class="card-precio fs-4">$10.000</p>
+                    <button class="btn btn-primary w-100"><i class="bi bi-cart4"></i> Agregar Producto</button>
+                </div>
+            </article>
+
+            <article class="card text-center py-2" style="width: 18rem;">
+                <img src="../imagenes_productos/img16.jpg" class="card-img-top w-50 m-auto" alt="card__img">
+                <div class="card-body">
+                    <h5 class="card-title">Xiaomi-Watch - #03</h5>
+                    <p class="card-text">Compra online 30% off</p>
+                    <p class="card-precio fs-4">$10.000</p>
+                    <button class="btn btn-primary w-100"><i class="bi bi-cart4"></i> Agregar Producto</button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer__content bg-primary p-3 m-auto d-flex justify-content-end">
+        <a href="https://www.whatsapp.com/" class="btn-wsp btn btn-success text-light"><i class="bi bi-whatsapp"></i></a>
+        <span class="footer__text text-light">@<strong>Página-3</strong> Comisión-64700</span>
+    </footer>
+    
+    <!-- Link-Script-Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    
+</body>
+</html>

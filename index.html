@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder-comision-64700</title>
+
+    <!-- Link-Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Link Boostrap Icons -->     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Link - Css -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header__content bg bg-light" id="header">
+        <section class="heading container-fluid bg bg-dark">
+            <article class="row row-gap-2 p-1">
+                <div class="col-sm-6 d-flex align-items-center justify-content-center">
+                    <span class="heading__text text-light">Seguinos en:</span>
+                </div>
+                <div class="col-sm-6 d-flex align-items-center justify-content-around">
+                    <a href="https://www.facebook.com/" class="link-redes btn btn-dark"><i class="bi bi-facebook"></i></a>
+                    <a href="https://x.com/?lang=es" class="link-redes btn btn-dark"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://www.instagram.com/" class="link-redes btn btn-dark"><i class="bi bi-instagram"></i></a>
+                    <a href="https://github.com/" class="link-redes btn btn-dark"><i class="bi bi-github"></i></a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-light bg bg-light">
+            <div class="container-fluid">
+                <img src="./logos/logo__principal.png" alt="logo" class="logo">
+                <button class="navbar-toggler fs-2" type="button" data-bs-target="#menu" data-bs-toggle="offcanvas">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <section class="offcanvas offcanvas-start" id="menu">
+                    <article class="offcanvas-header">
+                        <img src="./logos/logo__principal.png" alt="logo" class="logo">
+                        <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+                    </article>
+
+                    <article class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="index.html" class="nav-link fs-5 active border-bottom">Inicio</a></li>
+                            <li class="nav-item"><a href="./pages/nosotros.html" class="nav-link fs-5 border-bottom">Nosotros</a></li>
+                            <li class="nav-item"><a href="./pages/productos.html" class="nav-link fs-5 border-bottom">Productos</a></li>
+                            <li class="nav-item"><a href="./pages/servicios.html" class="nav-link fs-5 border-bottom">Servicios</a></li>
+                            <li class="nav-item"><a href="./pages/contacto.html" class="nav-link fs-5 border-bottom">Contacto</a></li>
+                        </ul>
+                    </article>
+                </section>
+            </div>
+        </nav>
+
+        <!-- Barra de busqueda -->
+        <section class="input-group flex-nowrap p-2">
+            <button class="btn btn-secondary" id="search-bar"><i class="bi bi-search"></i></button>
+            <input type="text" class="form-control" placeholder="Buscar" aria-label="Search" aria-describedby="search-bar">
+        </section>
+    </header>
+
+    <!-- Main Inicio -->
+    <main class="main__content" id="inicio">
+        <section id="section__slider" class="carousel slide">
+
+            <article class="carousel-indicators">
+                <button type="button" data-bs-target="#section__slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#section__slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#section__slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </article>
+
+            <article class="carousel-inner">
+                <figure class="carousel-item active">
+                    <img src="./imagenes/banner-1.png" class="d-block w-100" alt="slide_1">
+                </figure>
+                <figure class="carousel-item">
+                    <img src="./imagenes/banner-2.png" class="d-block w-100" alt="slide_2">
+                </figure>
+                <figure class="carousel-item">
+                    <img src="./imagenes/banner-3.png" class="d-block w-100" alt="slide_3">
+                </figure>                
+            </article>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#section__slider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#section__slider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+        <!-- Slider-Inifinito -->
+        <section class="slider__infinito">
+            <div class="container__slider">
+                <picture class="img__slider">
+                    <img src="./logos/logo-gadnic.png" alt="logo__slider" class="logo__slider">
+                </picture>
+
+                <picture class="img__slider">
+                    <img src="./logos/logo-galaxy-watch.png" alt="logo__slider" class="logo__slider">
+                </picture>
+
+                <picture class="img__slider">
+                    <img src="./logos/logo-garmin.png" alt="logo__slider" class="logo__slider">
+                </picture>
+
+                <picture class="img__slider">
+                    <img src="./logos/logo-xiaomi.png" alt="logo__slider" class="logo__slider">
+                </picture>
+
+                <picture class="img__slider">
+                    <img src="./logos/logo-amazfit.png" alt="logo__slider" class="logo__slider">
+                </picture>
+
+                <picture class="img__slider">
+                    <img src="./logos/logo-gadnic.png" alt="logo__slider" class="logo__slider">
+                </picture>
+
+                <picture class="img__slider">
+                    <img src="./logos/logo-galaxy-watch.png" alt="logo__slider" class="logo__slider">
+                </picture>
+
+                <picture class="img__slider">
+                    <img src="./logos/logo-garmin.png" alt="logo__slider" class="logo__slider">
+                </picture>
+
+                <picture class="img__slider">
+                    <img src="./logos/logo-xiaomi.png" alt="logo__slider" class="logo__slider">
+                </picture>
+
+                <picture class="img__slider">
+                    <img src="./logos/logo-amazfit.png" alt="logo__slider" class="logo__slider">
+                </picture>
+            </div>
+        </section>
+
+        <section class="banner__content__inicio p-3">
+            <article class="content__text__inicio">
+                <h3 class="content__title display-6 fw-bold py-4">ENVIOS A TODO EL PAIS</h3>
+                <p class="content__parrafo fs-4">Realizamos los envios en tiempo y forma desde la comodidad de tu hogar pedi tu unidad y la despachamos al <strong class="text-success">INSTANTE!</strong></p>
+            </article>
+            <div class="figure__content p-3">
+                <img src="./imagenes/content-img.png" alt="content__img" class="content__img">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer__content bg-primary p-3 m-auto d-flex justify-content-end">
+        <a href="https://www.whatsapp.com/" class="btn-wsp btn btn-success text-light"><i class="bi bi-whatsapp"></i></a>
+        <span class="footer__text text-light">@<strong>Página-1</strong> Comisión-64700</span>
+    </footer>
+    
+    <!-- Link-Script-Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    
+</body>
+</html>

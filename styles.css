@@ -1,0 +1,174 @@
+body{
+    min-width: 320px;
+    max-width: 1200px;
+    width: 100%;
+    overflow: hidden scroll;
+    margin: auto;
+}
+
+/* ====================== Header =========================== */
+
+.logo{
+    width: 120px;
+}
+
+.form-control:focus, .navbar-toggler:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.nav-item{
+    height: 60px;
+}
+
+.nav-link:hover{
+    border-bottom: 2px solid #4c4ce7 !important;
+    transition: all .1s ease-in-out;
+}
+
+/* ====================== Main Index =========================== */
+
+.slider__infinito{
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider__infinito .container__slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 10);
+}
+
+.slider__infinito .img__slider{
+    width: 150px;
+}
+
+.slider__infinito .img__slider .logo__slider{
+    width: 100%;
+    padding: 0 20px;
+}
+
+.banner__content__inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.figure__content{
+    max-width: 320px;
+}
+
+.content__img{
+    width: 100%;
+    object-fit: cover;
+    filter: drop-shadow(2px 4px 5px #000000c6);
+}
+
+/* ====================== Seccion Productos =========================== */
+
+.productos, .sub__productos{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.card{
+    margin: auto;
+}
+
+/* ====================== Seccion Servicios =========================== */
+
+.icon__servicio{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes scroll{
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-200px * 5));
+        transform: translateX(calc(-200px * 5));
+    }
+}
+
+/* ====================== Seccion Contacto =========================== */
+
+.form{
+    box-shadow: 0 0 10px 2px #00000053;
+    border-radius: 5px;
+}
+
+.text-area{
+    resize: none;
+    outline: none;
+    height: 120px;
+}
+
+/* ====================== Footer =========================== */
+
+.btn-wsp{
+    position: fixed;
+    bottom: 150px;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+/* ====================== Media Query =========================== */
+
+@media(min-width: 576px){
+    .btn-wsp{
+        position: fixed;
+        bottom: 90px;
+        font-size: 30px;
+        border-radius: 50%;
+    }
+}
+
+@media(min-width: 768px){
+    .offcanvas-body{
+        margin-left: auto;
+    }
+
+    .nav-link{
+        border-bottom: none !important;
+    }
+
+    .input-group{
+        margin: auto;
+        max-width: 500px;
+    }
+
+    .list-group{
+        max-width: 75vw;
+    }
+
+    .banner__content__inicio{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .figure__content{
+        max-width: 400px;
+    }
+}

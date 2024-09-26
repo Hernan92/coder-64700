@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder-comision-64700</title>
+
+    <!-- Link-Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Link Boostrap Icons -->     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Link - Css -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header__content bg bg-light" id="header">
+        <section class="heading container-fluid bg bg-dark">
+            <article class="row row-gap-2 p-1">
+                <div class="col-sm-6 d-flex align-items-center justify-content-center">
+                    <span class="heading__text text-light">Seguinos en:</span>
+                </div>
+                <div class="col-sm-6 d-flex align-items-center justify-content-around">
+                    <a href="https://www.facebook.com/" class="link-redes btn btn-dark"><i class="bi bi-facebook"></i></a>
+                    <a href="https://x.com/?lang=es" class="link-redes btn btn-dark"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://www.instagram.com/" class="link-redes btn btn-dark"><i class="bi bi-instagram"></i></a>
+                    <a href="https://github.com/" class="link-redes btn btn-dark"><i class="bi bi-github"></i></a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-light bg bg-light">
+            <div class="container-fluid">
+                <img src="../logos/logo__principal.png" alt="logo" class="logo">
+                <button class="navbar-toggler fs-2" type="button" data-bs-target="#menu" data-bs-toggle="offcanvas">
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <section class="offcanvas offcanvas-start" id="menu">
+                    <article class="offcanvas-header">
+                        <img src="../logos/logo__principal.png" alt="logo" class="logo">
+                        <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+                    </article>
+
+                    <article class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="../index.html" class="nav-link fs-5 border-bottom">Inicio</a></li>
+                            <li class="nav-item"><a href="../pages/nosotros.html" class="nav-link fs-5 border-bottom">Nosotros</a></li>
+                            <li class="nav-item"><a href="../pages/productos.html" class="nav-link fs-5 border-bottom">Productos</a></li>
+                            <li class="nav-item"><a href="./servicios.html" class="nav-link fs-5 active border-bottom">Servicios</a></li>
+                            <li class="nav-item"><a href="./contacto.html" class="nav-link fs-5 border-bottom">Contacto</a></li>
+                        </ul>
+                    </article>
+                </section>
+            </div>
+        </nav>
+
+        <!-- Barra de busqueda -->
+        <section class="input-group flex-nowrap p-2">
+            <button class="btn btn-secondary" id="search-bar"><i class="bi bi-search"></i></button>
+            <input type="text" class="form-control" placeholder="Buscar" aria-label="Search" aria-describedby="search-bar">
+        </section>
+    </header>
+
+        <!-- Main Servicios --> 
+
+        <main class="main__servicios py-3" id="servicios">
+            <h2 class="servicios__title px-5 text-secondary">Nuestros Servicios</h2>
+            <section class="servicios container p-2 m-auto">
+                <article class="row p-3 row-gap-2 border rounded-1">
+                    <div class="col__card col-12 col-md-4 bg bg-light p-2">
+                        <h4 class="title__servicio text-center">Envio Gratis</h4>
+                        <span class="icon__servicio"><i class="bi bi-truck"></i></span>
+                        <p class="text__servicio">Ofrecemos envío GRATIS para todas las compras superiores a $20.000 , si la compra es menor a este monto el cliente debe abonar el envío</p>
+                    </div>
+
+                    <div class="col__card col-12 col-md-4 bg bg-light p-2">
+                        <h4 class="title__servicio text-center">Medios de pago</h4>
+                        <span class="icon__servicio"><i class="bi bi-credit-card"></i></span>
+                        <p class="text__servicio">Aceptamos pagos con todas las tarjetas de crédito/debito a través de nuestra plataforma de pagos Mercado Pago (pago seguro). Tambien podés pagar por transferencia o efectivo a través de pagofacil/rapipago.</p>
+                    </div>
+
+                    <div class="col__card col-12 col-md-4 bg bg-light p-2">
+                        <h4 class="title__servicio text-center">Compatibilidad</h4>
+                        <span class="icon__servicio"><i class="bi bi-patch-check"></i></span>
+                        <p class="text__servicio">Todos nuestros productos con conexión bluetooth (auriculares,parlantes, smartwatch) son compatibles con cualquier dispositivo móvil (iPhone, Android, o celular) y PC que tenga conexión bluetooth.</p>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Sección Preguntas Frecuentes-->
+
+            <section class="collapse__Preguntas__frecuentes container">
+                <h2 class="title__seccion px-3 text-secondary">Preguntas Frecuentes</h2>
+                <section class="row row-gap-2 p-3">
+                    <article class="col-12">
+                        <button class="btn btn-outline-secondary w-100 rounded-bottom-0 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            ¿Como comprar?
+                        </button>
+
+                        <span class="collapse" id="collapseExample">
+                            <div class="card card-body rounded-top-0">
+                                1. Elige el producto que quieras y añadilo al carrito<br>
+                                2. Hacé click en ver carrito y luego iniciar compra<br>                              
+                                3. Completa tus datos de envío<br>                                
+                                4. Elegí el método de pago que prefieras<br>                                
+                                5. Al realizar el pago recibirás un correo con los detalles de tu compra<br>                                
+                                6. Y listo! Tu compra esta hecha, en las próximas 1-24 horas hábiles despachamos tu pedido. Al enviarse vas a recibir un correo con el código de seguimiento para que puedas rastrear tu pedido.
+                            </div>
+                        </span>
+                    </article>
+
+                    <article class="col-12">
+                        <button class="btn btn-outline-secondary w-100 rounded-bottom-0 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                            ¿Cuanto tarda en llegar mi pedido?
+                        </button>
+
+                        <span class="collapse" id="collapseExample2">
+                            <div class="card card-body rounded-top-0">
+                                Despachamos todos los días; el envío tardará entre 3 a 7 días hábiles. Una vez despachado tu producto te enviamos un código de seguimiento El código lo ingresas acá y podés ver el estado de tu pedido.<br>
+                                * Tené en cuenta que el envío es por parte de Correo Argentino y pueden haber demoras en el plazo de envío ajenas a nosotros.
+                            </div>
+                        </span>
+                    </article>
+
+                    <article class="col-12">
+                        <button class="btn btn-outline-secondary w-100 rounded-bottom-0 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                            ¿Tienen garantía?
+                        </button>
+
+                        <span class="collapse" id="collapseExample3">
+                            <div class="card card-body rounded-top-0">
+                                Puedes solicitar un cambio hasta 3 meses luego de realizada la compra.<br>
+                                * La garantía es válida siempre y cuando la rotura o falla sea de fábrica; no se cuenta con garantía para los fallos originados por razones personales del usuario.
+                            </div>
+                        </span>
+                    </article>
+                </section>
+            </section>
+        </main>   
+
+    <!-- Footer -->
+    <footer class="footer__content bg-primary p-3 m-auto d-flex justify-content-end">
+        <a href="https://www.whatsapp.com/" class="btn-wsp btn btn-success text-light"><i class="bi bi-whatsapp"></i></a>
+        <span class="footer__text text-light">@<strong>Página-4</strong> Comisión-64700</span>
+    </footer>
+    
+    <!-- Link-Script-Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    
+</body>
+</html>
